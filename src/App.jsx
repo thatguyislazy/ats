@@ -275,23 +275,23 @@ Return ONLY the CV content in clean plain text. No markdown symbols like ** or #
       )}
 
       {/* Top bar */}
-      <div className="mx-auto mb-10 flex max-w-6xl items-center justify-between sm:mb-16">
-        <button
-          type="button"
-          onClick={handleReset}
-          className="flex items-center gap-2 group"
-        >
-          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-accent-500 text-white transition-transform group-hover:scale-110">
-            <Sparkles size={18} />
-          </span>
-          <span className="font-display text-lg font-extrabold tracking-tight text-ink-900">
-            ats<span className="text-accent-500">.vercel.dev</span>
-          </span>
-        </button>
-        <p className="hidden text-sm text-ink-400 sm:block">
-          No sign-up. Just upload &amp; go.
-        </p>
-      </div>
+        <div className="mx-auto mb-10 flex max-w-6xl items-center justify-between sm:mb-16">
+            <button
+            type="button"
+            onClick={handleReset}
+            className="flex items-center gap-2 group"
+            >
+            <span className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-full transition-transform group-hover:scale-110">
+                <img src="/icon.png" alt="ATS logo" className="h-full w-full object-cover" />
+            </span>
+            <span className="font-display text-lg font-extrabold tracking-tight text-ink-900">
+                ats<span className="text-accent-500">.vercel.dev</span>
+            </span>
+            </button>
+            <p className="hidden text-sm text-ink-400 sm:block">
+            No sign-up. Just upload &amp; go.
+            </p>
+        </div>
 
       {/* Main content */}
       <div className="mx-auto flex max-w-6xl flex-col gap-10 lg:flex-row lg:items-start lg:gap-16">
